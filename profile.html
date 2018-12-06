@@ -11,14 +11,22 @@
 <body>
     <div ="container-fluid">
                 <div class="topnav" >
-                        <a href="#Aboutme" class="achor"><div class="zoom">About me</div></a>
-                        <a href="#Skills" class="achor"><div class="zoom">Skills</div></a>
-                        <a href="#Education" class="achor"><div class="zoom">Education.</div></a>
-                        <a href="#Hobbies" class="achor"><div class="zoom">Hobbies</div></a>
+                        <a href="#section1" class="achor" style=" -webkit-text-decoration-line: none;
+                        text-decoration-line: none; ">
+                        <div class="zoom">About me</div></a>
+                        <a href="#section2" class="achor" style=" -webkit-text-decoration-line: none;
+                        text-decoration-line: none; ">
+                        <div class="zoom">Education</div></a>
+                        <a href="#section3" class="achor" style=" -webkit-text-decoration-line: none;
+                        text-decoration-line: none; ">
+                        <div class="zoom">MyPortfolio</div></a>
+                        <a href="#section4" class="achor" style=" -webkit-text-decoration-line: none;
+                        text-decoration-line: none; ">
+                        <div class="zoom">Skills Set</div></a>
                       </div>
         <section>
             <section>
-                <div class="about-me">
+                <div class="about-me" id="section1">
                     <h3 class="about-h"> ABOUT ME</h3>
                     <P class="about-p"> I am Gabriel nwachukwu, a full stack software developer a citizen of Nigeria,
                         a lover of music.My software development journey satrted in Nairobi,Kenya.
@@ -31,9 +39,10 @@
 
                 </div>
             </section>
-            <div class="my-edu">
-                    <h3 class="my-edu"> EDUCATION</h3>
-                    <P class="my-edu"> I am Gabriel nwachukwu, a full stack software developer a citizen of Nigeria,
+            <section>
+            <div class="my-edu" id="section2">
+                    <h3 class="my-edu-h"> EDUCATION</h3>
+                    <P class="my-edu-p"> I am Gabriel nwachukwu, a full stack software developer a citizen of Nigeria,
                         a lover of music.My software development journey satrted in Nairobi,Kenya.
                         I studied software development in a school called Moringa school, Nairobi.
                         Moringa school is a 6 months bootcamp program, that is very intensive but pays off 
@@ -44,12 +53,39 @@
 
                 </div>
             </section>
+            <div class="container">
+                    <section>
+                            <div class="row" id="section3">
+                                    <h3 class="my-port-h">MY PORTFOLIO</h3>
+                            <div class="my-port col-md-3">
+                                    
+                                   <div class="git-search">
+                                    <h5>GitSearch</h5>
+                                    <img src="images/gitsearch.png" alt="gitsearch">
             
-            <div class="row" style="z-index:-2; position: absolute; width: 100%;  margin-top: -10px;">
+                                   </div>
+                                </div>
+                                <div class="my-port col-md-3">
+                                       <div class="git-search">
+                                        <h5>GitSearch</h5>
+                                        <img class="img-responsive" src="images/gabsnews.png" alt="gitsearch">
+                                        <div class="overlay">
+
+                                        </div>
+                                       </div>
+                                    </div>
+                                   
+                                </div>
+                    
+                            </section>
+                        
+                </div>
+            
+            <div class="row" style="z-index:-2; position: absolute; width: 100%; margin-left:0px; margin-top: -10px;">
                     
                 <div class="col-md-6 col-sm-6" style="background-color: dodgerblue; height: 350px;">
-                <div class="split-right h-100"> 
-                <p>CSS <span class="label label-default">Css</span></p>
+                <div class="split-right "> 
+                <p id="css">CSS <span class="label label-default">Css</span></p>
                 <p>HTML <span class="label label-default">Html</span></p>
                 <p>JAVASCRIPT <span class="label label-default">Javascript</span></p>
                 <p>ANGULAR Javascript <span class="label label-default">Angular js</span></p>
@@ -59,10 +95,10 @@
                 <p>DJANGO <span class="label label-default">Django</span></p>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6" style="background-color:gold; height: 350px; ">
-                    <div class="split-left h-100">
+            <div class="col-md-6 col-sm-6" id="section4" style="background-color:gold; height: 350px;">
+                    <div class="split-left " style="margin-left:30px;">
                         <div class="row">
-                            <br>
+                            
                             <div class="col-md-3">
                     <img src="images/css.png" alt="html" style="width: 80px; height: 100px;  border-radius: 20px;">
                 
@@ -114,15 +150,9 @@
                     <h1 class="text-center" style="color:whitesmoke;"> My Skills Set</h1>
                 </div>
             </div>
-
+        
         </section>
-        <section>
-
-            <div class=>
-
-            </div>
-        </section>
-    </div>
+        
     
 </body>
 </html>
@@ -133,7 +163,7 @@
     background-color: greenyellow;
     position: relative;
     display: inline;
-    padding: 20px;
+    padding: 10px;
     transition: transform .2s;
       margin-right: 50px;
       padding-right: 80px;
@@ -142,19 +172,23 @@
       line-height: 100px;
       border-radius: 25px;
       color: whitesmoke;
-      text-decoration-style: none;
-      
-      
-
 }
+
+ .zoom:hover {
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
 .topnav{
     background-color: aqua;
     margin-bottom:20px;
     font-size: 24px;
     border-bottom: solid 1px whitesmoke;
+    background-position-y: fixed;
     
 
 }
+
 .about-me{
     background-color: aqua;
     margin-top: -20px;
@@ -163,6 +197,7 @@
     padding: 0px;
     text-align: center;
     height: 300px;
+    opacity: 0.5;
    
 }
 .about-h{
@@ -185,7 +220,8 @@
     text-align:center;
     margin: auto;
     font-size: 20px;
-    color: green;
+    color: black;
+    font-weight: bold;
 }
 p{
     font-size: 16px;
@@ -195,6 +231,94 @@ p{
 .split-left{
     margin-top: 28px;
 }
+.my-edu{
+    background-color: aqua;
+    margin-top: -20px;
+    margin-bottom: 0;
+    border: 0px;
+    padding: 0px;
+    text-align: center;
+    height: 300px;
+}
+.my-edu-p{
+    text-align:center;
+    margin: auto;
+    font-size: 20px;
+    color: green;
+}
+.my-edu-h{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 50px;
+    top:7px;
+    left:38%;
+    border-radius: 20px;
+    position:relative;
+    background-color: deeppink; 
+    width: 21%; 
+    opacity: 0.6;
+    color: aliceblue;
+    height: 13%;
+   
+}
+.my-port-h{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 50px;
+    top:7px;
+    left:38%;
+    border-radius: 20px;
+    position:relative;
+    background-color: deeppink; 
+    width: 21%; 
+    opacity: 0.6;
+    color: aliceblue;
+    height: 13%;
 
+     
+}
+.my-port img{
+    height: 160px;
+    width: 200px;
+}
+.my-port{
+    height: 500px;
+     
+}
+body{
+        background-image:url("images/bg.jpeg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: serif;
+    }
+    html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100px;
+  height: 100px;
+  -webkit-transition: width 0.1s, height 0.1s, -webkit-transform 0.1s; 
+  transition: width 0.1s, height 0.1s, transform 0.1s;
+}
 
+img:hover {
+  width: 400px;
+  height: 400px;
+  -webkit-transform: rotate(360deg); 
+  transform: rotate(360deg);
+}
+
+#css .label{
+    width: 50px;
+  height: 50px;
+  -webkit-transition: width 0.2s; /* Safari */
+  transition: width 0.2s;
+  transition-timing-function: ease-out;
+}
+#css .label:hover{
+    width: 200px;
+
+}
 </style>
