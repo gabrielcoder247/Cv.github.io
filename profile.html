@@ -57,38 +57,58 @@
                     <section>
                             <div class="row" id="section3">
                                     <h3 class="my-port-h">MY PORTFOLIO</h3>
-                            <div class="my-port col-md-3">
+                            <div class="my-port col-md-4">
                                     
                                    <div class="hovereffect">
                                     <img class="img-responsive"src="images/gitsearch.png" alt="gitsearch">
                                     <div class="overlay">
-                                            <h5>GitSearch</h5>
+                                            <h2>GitSearch</h2>
                                             <a class="info" href="https://blogjeff.herokuapp.com/">view</a>
                                         </div>
                                    </div>
                                    <div class="hovereffect">
                                         <img class="img-responsive" src="images/gabsnews.png" alt="gitsearch">
                                         <div class="overlay">
-                                                <h5>Gabsnews</h5>
+                                                <h2>Gabsnews</h2>
                                                 <a class="info" href="https://blogjeff.herokuapp.com/">view</a>
                                         </div>
                                 </div>
                             </div>
-                                <div class="my-port col-md-3">
-                                        <div class="git-search">
+                                <div class="my-port col-md-4">
+                                    <div class="hovereffect">
                                                 <img class="img-responsive" src="images/gabsnews.png" alt="gitsearch">
                                                 <div class="overlay">
-                                                        <h5>Gabsnews</h5>
+                                                        <h2>Gabsnews</h2>
+                                                        <a class="info" href="https://blogjeff.herokuapp.com/">view</a>
                                                 </div>
                                        </div>
-                                       <div class="git-search">
+                                       <div class="hovereffect">
                                             <img class="img-responsive" src="images/gabsnews.png" alt="gitsearch">
                                             <div class="overlay">
-                                                <h5>Gabsnews</h5>
+                                                <h2>Gabsnews</h2>
+                                                <a class="info" href="https://blogjeff.herokuapp.com/">view</a>
                                             </div>
                                     </div>
                                    
                                 </div>
+                                <div class="my-port col-md-4">
+                                    <div class="hovereffect">
+                                                <img class="img-responsive" src="images/gabsnews.png" alt="gitsearch">
+                                                <div class="overlay">
+                                                        <h2>Gabsnews</h2>
+                                                        <a class="info" href="https://blogjeff.herokuapp.com/">view</a>
+                                                </div>
+                                       </div>
+                                       <div class="hovereffect">
+                                            <img class="img-responsive" src="images/gabsnews.png" alt="gitsearch">
+                                            <div class="overlay">
+                                                <h2>Gabsnews</h2>
+                                                <a class="info" href="https://blogjeff.herokuapp.com/">view</a>
+                                            </div>
+                                    </div>
+                                   
+                                </div>
+                                
                     
                             </section>
                         
@@ -186,6 +206,13 @@
       border-radius: 25px;
       color: whitesmoke;
 }
+  .achor .zoom:hover {
+    background-color:deeppink;
+    box-shadow: 0 0 5px #fff;
+      /* -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5); */
+    }
 
 
 .topnav{
@@ -201,6 +228,11 @@
     margin-left: 50;
 }
 
+/* .achor .zoom :hover {
+      
+      ;
+    } */
+
 .about-me{
     background-color: aqua;
     margin-top: -20px;
@@ -210,6 +242,7 @@
     text-align: center;
     height: 300px;
     opacity: 0.5;
+    
    
 }
 .about-h{
@@ -225,6 +258,7 @@
     opacity: 0.6;
     color: aliceblue;
     height: 13%;
+    overflow: hidden;
    
 }
 .about-p{
@@ -251,12 +285,20 @@ p{
     padding: 0px;
     text-align: center;
     height: 300px;
+    
 }
 .my-edu-p{
     text-align:center;
     margin: auto;
     font-size: 20px;
     color: green;
+    height: 210px;
+    width: 50%;
+    /* border: solid whitesmoke 1px;
+    box-shadow: 0 0 8px green;
+    border-radius: 15px; */
+    margin-top: 20px;
+
 }
 .my-edu-h{
     text-align: center;
@@ -304,6 +346,7 @@ body{
         background-position: center;
         background-attachment: fixed;
         font-family: serif;
+        box-sizing: border-box;
     }
     html {
   scroll-behavior: smooth;
@@ -324,12 +367,14 @@ img:hover {
 
    .hovereffect {
       width: 300px;
-      height: 200px;
+      height: 160px;
       float: left;
       overflow: hidden;
       position: relative;
       text-align: center;
       cursor: default;
+      margin-top: 25px;
+      border-radius: 15px;
     }
     .hovereffect .overlay {
       width: 100%;
@@ -363,6 +408,9 @@ img:hover {
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out;
     }
+    .hovereffect .overlay h2{
+        margin-top: 0px;
+    }
     .hovereffect a.info {
       text-decoration: none;
       display: inline-block;
@@ -376,10 +424,11 @@ img:hover {
       transition: all .2s ease-in-out;
       margin: 50px 0 0;
       padding: 7px 14px;
+      border-radius: 10px;
     }
     .hovereffect a.info:hover {
       box-shadow: 0 0 5px #fff;
-      ;
+      
     }
     .hovereffect:hover img {
       -ms-transform: scale(1.2);
