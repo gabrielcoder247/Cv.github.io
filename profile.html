@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Profile</title>
 </head>
 <body>
@@ -28,7 +29,8 @@
             <section>
                 <div class="about-me" id="section1">
                     <h3 class="about-h"> ABOUT ME</h3>
-                    <P class="about-p"> I am Gabriel nwachukwu, a full stack software developer a citizen of Nigeria,
+                    <P class="about-p"> 
+                        I am Gabriel nwachukwu, a full stack software developer a citizen of Nigeria,
                         a lover of music.My software development journey satrted in Nairobi,Kenya.
                         I studied software development in a school called Moringa school, Nairobi.
                         Moringa school is a 6 months bootcamp program, that is very intensive but pays off 
@@ -42,17 +44,29 @@
             <section>
             <div class="my-edu" id="section2">
                     <h3 class="my-edu-h"> EDUCATION</h3>
-                    <P class="my-edu-p"> I am Gabriel nwachukwu, a full stack software developer a citizen of Nigeria,
-                        a lover of music.My software development journey satrted in Nairobi,Kenya.
-                        I studied software development in a school called Moringa school, Nairobi.
-                        Moringa school is a 6 months bootcamp program, that is very intensive but pays off 
-                        as well in the long run.
-                        i have learnt how to build apps from scratch to a fully well designed and built apps. 
-
+                    <P class="my-edu-p"> 
+                            <span class="glyphicon glyphicon-asterisk"> General Murtala Mohammed College, Yola,Adamawa State,Nigeria </span>
+                                    
+                                 <br>
+                                 <br>
+                             <span class="glyphicon glyphicon-asterisk"> Moringa school, Nairobi, Kenya</span> 
+                                     
+                                 <br>
+                                 <br>
+                              <span class="glyphicon glyphicon-asterisk"> National Research University, Moscow, Russia</span> 
+      
+                       
                     </P>
 
                 </div>
             </section>
+            <div class="icon-bar">
+                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                <a href="#" class="google"><i class="fa fa-google"></i></a> 
+                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+              </div>
             <div class="container">
                     <section>
                             <div class="row" id="section3">
@@ -118,7 +132,7 @@
                     
                 <div class="col-md-6 col-sm-6" style="background-color: dodgerblue; height: 350px;">
                 <div class="split-right "> 
-                <p id="cs">CSS <span class="label label-default">Css</span></p>
+                <p>CSS <span class="label label-default">Css</span></p>
                 <p>HTML <span class="label label-default">Html</span></p>
                 <p>JAVASCRIPT <span class="label label-default">Javascript</span></p>
                 <p>ANGULAR Javascript <span class="label label-default">Angular js</span></p>
@@ -179,7 +193,7 @@
                 </div>
             </div>
             <div class="overlay" style="top:132px;left:38%;border-radius: 20px; position:relative; background-color: deeppink; width: 22%; opacity: 0.5;">
-             <div class="text-center" >
+             <div class="text-center">
                     <h1 class="text-center" style="color:whitesmoke;"> My Skills Set</h1>
                 </div>
             </div>
@@ -208,7 +222,7 @@
 }
   .achor .zoom:hover {
     background-color:deeppink;
-    box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px deeppink;
       /* -ms-transform: scale(1.5);
       -webkit-transform: scale(1.5);
       transform: scale(1.5); */
@@ -223,6 +237,10 @@
     background-position-y: fixed;
     
 
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .topnav{ width: 442px; left:22%;}
 }
 .achor{
     margin-left: 50;
@@ -245,6 +263,11 @@
     
    
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about-me{ width: 442px; left:50%; }
+}
+
 .about-h{
     text-align: center;
     font-size: 30px;
@@ -261,6 +284,11 @@
     overflow: hidden;
    
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about-h{ width: 50%; left:22%; background-color: deeppink;}
+}
+
 .about-p{
     max-width: 500px;
     text-align:center;
@@ -269,6 +297,12 @@
     color: black;
     font-weight: bold;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about-p{font-size: 18px;}
+}
+
 p{
     font-size: 16px;
     margin-left:40px;
@@ -277,6 +311,7 @@ p{
 .split-left{
     margin-top: 28px;
 }
+
 .my-edu{
     background-color: aqua;
     margin-top: -20px;
@@ -287,18 +322,30 @@ p{
     height: 300px;
     
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .my-edu{ width: 442px; left:22%;}
+}
+
 .my-edu-p{
     text-align:center;
     margin: auto;
     font-size: 20px;
-    color: green;
+    color:white;
     height: 210px;
     width: 50%;
+    text-align: left;
+    
+    /* overflow: hidden; */
     /* border: solid whitesmoke 1px;
     box-shadow: 0 0 8px green;
     border-radius: 15px; */
     margin-top: 20px;
 
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .my-edu-p{ width: 100%;font-size: 18px; }
 }
 .my-edu-h{
     text-align: center;
@@ -315,6 +362,12 @@ p{
     height: 13%;
    
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .my-edu-h{ width: 50%; left:22%; background-color: deeppink;  }
+}
+
 .my-port-h{
     text-align: center;
     font-size: 30px;
@@ -327,18 +380,26 @@ p{
     width: 24%; 
     opacity: 0.6;
     color: aliceblue;
-    height: 7%;
-
-     
+    height: 7%;    
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .my-port-h{ width: 80%; left:30%; background-color: deeppink;}
+}
+
 .my-port img{
     height: 160px;
     width: 200px;
 }
+
 .my-port{
-    height: 500px;
-     
+    height: 500px;   
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .my-port{ height:200px; left:13%}
+}
+
 body{
         background-image:url("images/bg.jpeg");
         background-size:cover;
@@ -347,7 +408,15 @@ body{
         background-attachment: fixed;
         font-family: serif;
         box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
     }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+  body{ width: 300px;height: 500px;}
+}
+
+
     html {
   scroll-behavior: smooth;
 }
@@ -356,6 +425,10 @@ img {
   height: 100px;
   -webkit-transition: width 0.1s, height 0.1s, -webkit-transform 0.1s; 
   transition: width 0.1s, height 0.1s, transform 0.1s;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  img { width: 20%; height: 30%;}
 }
 
 img:hover {
@@ -451,5 +524,73 @@ img:hover {
       -webkit-transition-delay: .2s;
       transition-delay: .2s;
     }
+
+
+    /* styling for social media icons */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 100px;
+  width: 50px;
+}
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  .icon-bar { 
+    position: fixed;
+  top: 50%;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+}
+  }
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  .icon-bar a{ 
+    display: inline;
+    transition: all 0.3s ease;
+}
+  }
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
 
 </style>
